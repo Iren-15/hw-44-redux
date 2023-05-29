@@ -91,11 +91,13 @@ export const FormikForm = () => {
 
               {MyFormUsers.map((item) => (
                 <table key={item.id}>
+                  <tbody>
                   <tr>
                     <td>{item.username}</td>
                     <td>{item.userlastname}</td>
                     <td>{item.useremail}</td>
                   </tr>
+                  </tbody>
                 </table>
               ))}
             </Form>
