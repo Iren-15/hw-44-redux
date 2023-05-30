@@ -2,7 +2,6 @@ import { useDispatch } from "react-redux";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import uniqid from "uniqid";
 import * as Yup from "yup";
-import { useFormSelector } from "../store/selector/formSelectors";
 import { addUser } from "../store/action/formActions";
 import styles from "../form/styles.module.scss";
 
@@ -27,7 +26,6 @@ const validationSchema = Yup.object({
 });
 
 export const FormikForm = () => {
-  const MyFormUsers = useFormSelector();
   const dispatch = useDispatch();
 
   const onSubmit = (values: IFormValues) => {
@@ -89,17 +87,6 @@ export const FormikForm = () => {
                 Submit
               </button>
 
-              {MyFormUsers.map((item) => (
-                <table key={item.id}>
-                  <tbody>
-                  <tr>
-                    <td>{item.username}</td>
-                    <td>{item.userlastname}</td>
-                    <td>{item.useremail}</td>
-                  </tr>
-                  </tbody>
-                </table>
-              ))}
             </Form>
           </>
         );

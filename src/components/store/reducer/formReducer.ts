@@ -1,9 +1,9 @@
 import { ADD_USER } from "../action/formActions";
 import { IAction, IStore } from "../types";
 
-export const formReducer = (
-  state: IStore["formUser"] = [],
-  action: IAction<any>
+export const userReducer = (
+  state: IStore["user"] = [],
+  action: IAction <any>
 ) => {
 
   switch (action.type) {

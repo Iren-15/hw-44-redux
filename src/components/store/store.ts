@@ -1,8 +1,8 @@
 import { combineReducers, compose, createStore } from "redux";
-import { formReducer } from "./reducer/formReducer";
+import { userReducer } from "./reducer/formReducer";
 
 const rootReducer = combineReducers({
-  formUser: formReducer,
+  user: userReducer,
 });
 
 export const store = createStore(

@@ -1,8 +1,8 @@
 import { useSelector } from "react-redux";
 import { IStore } from "../types";
 
-export const useFormSelector = () => {
-  const formUser = useSelector((state: IStore) => state.formUser);
+export const useUserSelector = () => {
+  const user = useSelector((state: IStore) => state.user);
 
-  return formUser;
+  return user;
 };

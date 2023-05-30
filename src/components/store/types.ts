@@ -1,9 +1,9 @@
-export interface IAction<T> {
+export interface IAction {
   type: string;
-  payload: T;
+  payload: any;
 }
 
-export interface IFormUser {
+export interface IUser {
   id: string;
   username: string;
   userlastname: string;
@@ -11,5 +11,5 @@ export interface IFormUser {
 }
 
 export interface IStore {
-  formUser: IFormUser[];
+  user: IUser[];
 }

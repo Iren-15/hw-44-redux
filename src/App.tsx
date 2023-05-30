@@ -1,6 +1,7 @@
 import { Provider } from "react-redux";
 import { store } from "./components/store/store";
 import { FormikForm } from "./components/form";
+import { TblUsers } from "./components/tblUsers/tblUsers";
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <Provider store={store}>
       <div>
         <FormikForm />
+        <TblUsers/>
       </div>
     </Provider>
   );
