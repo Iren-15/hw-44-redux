@@ -4,11 +4,11 @@ import styles from "../tblUsers/styles.module.scss";
 export interface ITblUsers {}
 
 export const TblUsers = () => {
-  const MyFormUsers = useUserSelector();
+  const MyUsers = useUserSelector();
 
   return (
     <div>
-      {MyFormUsers.map((item: any) => (
+      {MyUsers.map((item: any) => (
         <table className={styles["tbl-border"]} key={item.id}>
           <tbody>
             <tr>
