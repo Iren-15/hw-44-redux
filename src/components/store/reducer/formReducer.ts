@@ -3,7 +3,7 @@ import { IAction, IStore } from "../types";
 
 export const userReducer = (
   state: IStore["user"] = [],
-  action: IAction <any>
+  action: IAction 
 ) => {
 
   switch (action.type) {
